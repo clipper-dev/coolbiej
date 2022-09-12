@@ -1,0 +1,24 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.review-container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-stars{
+    font-size: 1.2rem;
+    color: gold;
+}
+
+.review-label{
+    font-size: 1.2rem;
+    color: var(--alternateFontText);
+}

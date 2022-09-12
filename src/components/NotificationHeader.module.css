@@ -1,0 +1,65 @@
+.main-container {
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    border: solid 2px var(--primaryBorder);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.7rem;
+    background-color: var(--secondaryBackground);
+}
+
+.text-container {
+
+}
+.icon {
+    margin: rem;
+}
+
+/*styles for the tag*/
+.notification {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--fontMainContast);
+    background: linear-gradient(90deg,#ed6292 25%,#ed5760 87.5%);
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+.notification-open-for-hire {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--fontMainContast);
+    background: linear-gradient(90deg,#6fe34f 25%,#17dd1a 87.5%);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+.notification-important {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--fontMainContast);
+    background: linear-gradient(90deg,#e34f6d 25%,#dd1773 87.5%);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+
+.notification-item {
+    text-align: left;
+    margin: 0.1rem;
+}
+
+.emphasis {
+    font-weight: 700;
+
+}

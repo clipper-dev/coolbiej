@@ -26,6 +26,11 @@
   "peerDependencies": {
     "react": "^16.0.0"
   },
+  "author": {
+    "name": "Eric Kulbiej",
+    "email": "ekulbiej@gmail.com"
+  },
+  "homepage": "https://zaprojektowani.net/coolbiej",
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",

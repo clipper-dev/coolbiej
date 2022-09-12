@@ -1,0 +1,80 @@
+.link {
+    cursor: pointer;
+}
+
+.main-footer-container {
+    width: 100%;
+    height: fit-content;
+    min-height: 200px;
+    background-color: var(--secondaryBackground);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.footer-column {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    max-width: 50ch;
+    padding: 0.5rem;
+    color: var(--fontTextMain);
+
+}
+
+.footer-subheading {
+    font-size: 0.7rem;
+    font-weight: 600;
+    max-width: 60ch;
+    padding: 0.5rem;
+    color: var(--primaryAccent);
+
+}
+
+.footer-link {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 60ch;
+    padding: 0.5rem;
+    color: var(--fontTextMain);
+}
+
+.footer-content {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 50ch;
+    line-height: 1.5;
+    padding: 0.5rem;
+    color: var(--fontTextMain);
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-link-item {
+    margin-left: 1rem;
+    border-bottom: solid 2px transparent;
+    border-top: solid 2px transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+.footer-link:hover .footer-link-item {
+    border-bottom: solid 2px var(--fontMainContast);
+}

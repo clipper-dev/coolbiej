@@ -1,0 +1,19 @@
+.main-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    border: solid 1px var(--primaryBorder);
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.main-label {
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.main-container:hover {
+    background-color: var(--primaryBorder);
+}

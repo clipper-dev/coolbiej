@@ -1,10 +1,4 @@
-import React from 'react'
-
-import { Accordion } from 'coolbiej'
-import 'coolbiej/dist/index.css'
-
-const App = () => {
-  const FAQ = [
+export const FAQ = [
     {
         id: "q1",
         question: 'Is the app finished?',
@@ -26,10 +20,3 @@ const App = () => {
         answer: 'As soon as it will be finished :)'
     }
 ]
-
-return <>
-    <Accordion data={FAQ} />
-  </>
-}
-
-export default App

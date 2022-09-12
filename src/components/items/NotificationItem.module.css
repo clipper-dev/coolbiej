@@ -1,0 +1,41 @@
+.notification-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.notification-item-name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.notification-item-status{
+    font-size: 0.8rem;
+    color: rgb(137, 137, 137);
+}
+
+.notification-item-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-item-buttons-item {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    color: transparent;
+}
+
+.notification-item:hover .notification-item-buttons-item {
+    color: var(--primaryDivider2);
+}
+
+.notification-item:hover .notification-item-buttons-item:hover {
+    cursor: pointer;
+    color: var(--alternateHighlight);
+    transform: scale(1.2);
+}

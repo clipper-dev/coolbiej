@@ -1,0 +1,55 @@
+.main-container{
+    padding: 2rem;
+   /*  border: solid 2px orange; */
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.header-label{
+    padding: 0.5rem 0rem;
+    color: var(--alternateFontText);
+    font-size: 0.8rem;
+    font-weight: 600;   /* 
+    border: solid 2px orange; */
+}
+
+.size-9 {
+    padding-left: 0rem;
+    flex-grow: 9;
+    width: 90%;
+}
+.size-7 {
+    flex-grow: 7;
+    text-indent: 0.5rem;
+    width: 70%;
+}
+.size-1 {
+    flex-grow: 1;
+    width: 10%;
+}
+
+
+/* 
+Toolbar container
+ */
+.title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fill;
+    margin: 0.5rem 0rem;
+}
+
+.toolbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem;
+}

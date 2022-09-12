@@ -1,0 +1,21 @@
+.backdrop-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow:scroll;
+    background-color: #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 900px) {
+    .backdrop-main {
+        padding-top: 5vh;
+        align-items: flex-start;
+    }
+}

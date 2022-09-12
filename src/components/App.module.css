@@ -1,0 +1,25 @@
+.main-app-container {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-column {
+
+}
+
+.middle-container {
+    min-width: 500px;
+}
+
+.right-column {
+
+}
+
+.animation-container {
+    width: 400px;
+    height: 400px;
+}

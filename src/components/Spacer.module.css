@@ -1,0 +1,34 @@
+.spacer-container {
+    display:flex;
+    justify-content: center;
+}
+
+.small {
+    margin: 2rem 10vw;    
+    align-self: center;    
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.large {
+    margin: 2rem 10vw;    
+    min-width: 200px;
+    align-self: center;    
+    min-width: 250px;
+    max-width: 500px;
+}
+
+/*Media querries*/
+
+@media only screen and (max-width: 600px) {
+    .small {
+        margin: 2rem 30vw;    
+        min-width: 100px;
+    }
+    
+    .large {
+        margin: 2rem 10vw;    
+        min-width: 200px;
+    }
+	
+}

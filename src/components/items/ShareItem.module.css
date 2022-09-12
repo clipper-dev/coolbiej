@@ -1,0 +1,66 @@
+.friend-item {
+    display: flex;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    justify-content: flex-start;
+}
+
+.friend-item-name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.friend-item-status{
+    font-size: 0.8rem;
+    color: rgb(137, 137, 137);
+}
+
+.friend-item-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.friend-item-buttons-item {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    color: transparent;
+}
+
+.friend-item:hover .friend-item-buttons-item {
+    color: var(--primaryDivider2);
+}
+
+.friend-item:hover .friend-item-buttons-item:hover {
+    cursor: pointer;
+    color: var(--alternateHighlight);
+    transform: scale(1.2);
+}
+/*friend picture cropped to circle*/
+.initial-outilne-container {
+    margin-right: 1rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--primaryBorder);
+    box-shadow: 2px 2px 4px #00000077;
+    border-radius: 50%;
+  }
+  
+  .initial-outline {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  /*friend picture cropped to circle*/
+  .friend-item-picture {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  

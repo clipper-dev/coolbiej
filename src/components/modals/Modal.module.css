@@ -1,0 +1,84 @@
+.modal-background {
+	width: 100%;
+	height: 100%;
+	background-color: #00000030;
+	position:fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 14;
+}
+
+.modal-container {
+	display: flex;
+	flex-direction: column;
+	min-width: 50%;
+	min-height: 50%;
+	padding: 0.5rem;
+	border: 1px solid var(--primaryGray);
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 3px 3px 3px #00000030;
+	z-index: 15;
+}
+
+.modal-title {
+	text-decoration: none;
+}
+
+.modal-label {
+	text-decoration: none;
+	max-width: 60ch;
+}
+
+.modal-input {
+	max-width: 90%;
+	margin: 0.5rem;
+}
+
+.spread-line {
+	display: flex;
+	justify-content: space-around;
+}
+
+.project-container {
+	width: min-content;
+	display: flex;
+}
+
+.project-chosen {
+	cursor: pointer;
+	border: solid 2px var(--iconChosen);
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+}
+.project-choose {
+	cursor: pointer;
+	border: solid 2px var(--iconHover);
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+}
+.project-choose:hover, .tag-enabled:hover {
+	border: solid 2px var(--fontHighlight);
+}
+
+.tag-chosen {
+	cursor: pointer;
+	border: solid 2px var(--iconChosen);
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+}
+.tag-enabled {
+	cursor: pointer;
+	border: solid 2px var(--iconHover);
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+}
+.tag-disabled {
+	cursor: pointer;
+	border: solid 2px var(--primaryPink);
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+}

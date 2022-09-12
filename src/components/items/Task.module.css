@@ -1,0 +1,127 @@
+.main-container {
+    /*  border: solid 3px orange; */
+    min-height: 2.5rem;
+    padding: 0.3rem 0;
+    background-color: var(--white);
+    box-shadow: 2px 2px 4px #00000070;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-container:hover {
+    background-color: var(--primaryBackground);
+}
+
+.content-container {    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-general{/* 
+    border: 2px solid tomato; */
+    width: 10%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.text-section {
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    width: 70%;
+    flex-grow: 7;
+    flex-shrink: 7;
+}
+.grab-icon{
+    cursor: move;
+}
+.open-description-icon{
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.open-description-icon-open{
+    transform: rotate(180deg);
+    color:var(--alternateHighlight) !important;
+}
+.operation-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.2rem;
+    color: white;
+}
+.main-operation-icon {
+    padding: 0 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    color:var(--primaryDivider2);
+}
+.main-container:hover .operation-icon  {
+    color:var(--primaryDivider2); 
+}
+.main-container:hover .operation-icon:hover{
+    color:var(--alternateHighlight);
+}
+.main-container:hover .main-operation-icon:hover{
+    color:var(--alternateHighlight);
+}
+
+.time-ago-container{
+    font-size: 0.8rem;
+    color: var(--fontText);
+}
+
+/*details drawer*/
+.details-container {
+    background-color: var(--primaryBackground);
+    box-shadow: 2px 2px 4px #00000070;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+.details-container-hidden{
+    height: 0rem;
+    min-height: 0rem;
+    max-height: 0rem;
+}
+.details-container-open{
+    padding-bottom: 0.5rem;
+    height: fill;
+    min-height: 3rem;
+    max-height: 10rem;
+    overflow-y: auto;
+}
+.details-container--description{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+.details-container--description{
+    font-size: 0.9rem;
+}
+
+/*dates of creation adn modification*/
+.details-container--dates{
+    display: flex;
+    justify-content: space-between;
+}
+.details-container--dates-item{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--alternateFontText);
+    padding: 0 0.5rem;
+}

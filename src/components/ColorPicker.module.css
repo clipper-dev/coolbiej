@@ -1,0 +1,22 @@
+.color-picker--container {
+    display: flex;
+
+}
+
+.color-picker--outer {
+    margin: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: solid 2px gray;
+}
+
+.color-picker--inner {
+    width: 0.8rem;
+    height: 0.8rem;
+    padding: .2rem;
+    border-radius: 50%;
+}

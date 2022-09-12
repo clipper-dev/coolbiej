@@ -1,0 +1,47 @@
+.curtain-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+.label{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.button {
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    transition: all 0.2s ease-in-out;
+}
+.button:hover {
+    color: aliceblue;
+}
+
+.input {
+    border: solid 1px var(--primaryDivider);
+    background: none;
+    background-color: var(--primaryBorder);
+    font-size: 2rem;
+    width: auto;
+    text-align: center;
+    margin: 2rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+.input:hover{
+    outline: solid 1px black;
+    
+}
+.input:focus {
+    outline: solid 2px black;
+
+}
