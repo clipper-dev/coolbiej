@@ -1,0 +1,42 @@
+.card {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: .5rem;
+	outline: none;
+	min-width: fit-content;
+	border: solid 2px transparent;
+}
+
+/*styles*/
+.card--primary {
+	border: 1px solid var(--primaryGray);
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: -3px -3px 3px #ffffff70,
+		3px 3px 3px #00000030;
+}
+
+/*sizes*/
+.card--default {
+	width: 30vw;
+	height: 30vh;
+}
+
+/*colors*/
+.card--primary--color {
+	background-color: var(--secondaryGray);
+}
+
+.card--gradient--purple {
+	background: rgb(154, 0, 255);
+	background: linear-gradient(45deg, rgba(154, 0, 255, 1) 0%, rgba(98, 51, 252, 1) 49%, rgba(45, 255, 221, 1) 100%);
+}
+
+.card--gradient--red {
+	background: rgb(180, 58, 87);
+	background: linear-gradient(150deg, hsl(-30, 97%, 45%) 0%, hsl(10, 98%, 55%) 50%, hsl(13, 97%, 63%) 100%);
+}

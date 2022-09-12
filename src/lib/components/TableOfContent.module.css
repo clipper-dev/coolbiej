@@ -1,0 +1,23 @@
+.main-container {
+    position: sticky;
+    max-width: 350px;
+    margin-top: 10vh;
+    padding: 1rem;
+    border: solid 2px var(--primaryBorder);
+    border-radius: 1rem;
+    margin-left: 1rem;
+    top: 10vh;
+}
+
+.header {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .main-container {
+        display: none;
+    }
+    
+}

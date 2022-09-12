@@ -1,0 +1,129 @@
+
+
+.btn {
+	margin: 0.7rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn--primary {
+	background-color: var(--primaryHighlight);
+	color: var(--fontContrast);
+	border: 2px solid transparent;
+}
+
+.btn--semitransparent {
+	background-color: #ffffff95;
+	color: black;
+	font-weight: bold;
+	border: 2px solid transparent;
+}
+
+.btn--cancel {
+	background-color: var(--primaryPink);
+	color: var(--fontContrast);
+	border: 2px solid transparent;
+}
+
+.btn--call-to-action {
+    font-weight: 800;
+    color: var(--fontMainContast);
+    background: linear-gradient(90deg,#ed6292 25%,#ed5760 87.5%);
+	border: solid 2px var(--alternateHighlight);
+	box-shadow: 2px 2px 8px var(--alternateHighlight);
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+.btn--call-to-action:hover {
+    color: var(--alternateHighlight);
+	border: solid 2px var(--alternateHighlight);
+    background: var(--fontMainContast);
+}
+
+
+.btn--initial {
+	width: 34px;
+	height: 34px;
+	background: rgb(180, 58, 140);
+	background: linear-gradient(45deg, rgba(180, 58, 140, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 152, 69, 1) 100%);
+	box-shadow: -3px -3px 3px #ffffff70,
+		3px 3px 3px #00000070;
+	color: var(--fontPrimary);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn--initial--pressed {
+	width: 36px;
+	height: 36px;
+	background: rgb(180, 58, 140);
+	background: linear-gradient(215deg, rgba(180, 58, 140, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 152, 69, 1) 100%);
+	box-shadow: -3px -3px 3px #ffffff70,
+		3px 3px 3px #00000070;
+	color: var(--fontPrimary);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn--outline {
+	background-color: transparent;
+	color: var(--iconChosen);
+	padding: 8px 20px;
+	border: 2px solid var(--iconChosen);
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.btn--small {
+	width: fit-content;
+	padding: 4px 16px;
+	font-size: 1rem;
+}
+.btn--medium {
+	min-width: 100px;
+	width: fit-content;
+	padding: 4px 16px;
+	font-size: 1rem;
+}
+
+
+.btn--medium--round {
+	padding: 8px;
+	border-radius: 50%;
+	font-size: 1rem;
+}
+
+.btn--long {
+	padding: 1px 50px;
+	font-size: 2rem;
+}
+
+.btn--large {
+	padding: 12px 26px;
+	font-size: 1rem;
+}
+.btn--primary:hover{
+	background: var(--primaryBackground);
+	color: var(--primaryHighlight);
+	border-color: var(--primaryHighlight);
+}
+.btn--cancel:hover {
+	background: var(--primaryBackground);
+	color: var(--primaryPink);
+	border-color: var(--primaryPink);
+}
+
+
+
+.btn--medium:hover .icon {
+
+	fill: var(--iconHover);
+	transition: all 0.3s ease-in-out;
+}

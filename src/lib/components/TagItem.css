@@ -1,0 +1,95 @@
+.tag-container {
+	cursor: pointer;
+	padding: 5px;
+	display: flex;
+	width: fit-content;
+	min-width: 5rem;
+	align-items: center;
+	color: #fff;
+	border-radius: 15px;
+	background-color: var(--buttonHover);
+	border: solid 2px transparent;
+	margin: 5px;
+}
+
+.tag-container:hover .iconButton-invisible {
+	opacity: 1;
+}
+
+.tag-edited {
+	border: solid 2px var(--iconChosen);
+	color: var(--iconChosen);
+}
+
+.tag-text {
+	padding: 4px;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+}
+.tag-text-tiny {
+	padding: 2px;
+	color: #fff;
+	font-family: Arial;
+	font-size: 8px;
+	font-weight: bold;
+}
+
+.tag-container-compact {
+	cursor: pointer;
+	display: flex;
+	width: fit-content;
+	padding: 0.1rem;
+	align-items: center;
+	border-radius: 0.8rem;
+	border: solid 2px black;
+}
+.tag-container-tiny {
+	cursor: pointer;
+	display: flex;
+	width: fit-content;
+	padding: 0.1rem;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	margin: 0.1rem;
+	align-items: center;
+	border-radius: 0.8rem;
+	border: solid 2px black;
+	
+}
+
+.tag-circle {
+	width: .5rem;
+	height: .5rem;
+	background-color: black;
+	border-radius: 50%;
+	border: solid 1px black;
+}
+.tag-circle-tiny {
+	width: .2rem;
+	height: .2rem;
+	background-color: black;
+	border-radius: 50%;
+	border: solid 1px black;
+}
+
+
+.default {
+	background-color: black;
+	color: black;
+}
+
+.pink {
+	background-color: var(--primaryPink);
+}
+
+.blue {
+	background-color: var(--primaryHighlight);
+}
+
+.silver {
+	background-color: var(--sonic-silver);
+}
+.violet {
+	background-color: var(--iconChosen);
+}

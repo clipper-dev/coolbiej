@@ -1,0 +1,64 @@
+.todoItem {
+	padding: 0px;
+	margin: 5px;
+}
+
+.todo-item-container {
+	padding: 0.5rem;
+	margin: 10px;
+	height: 30px;
+	border: 1px solid var(--primaryGray);
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: -3px -3px 3px #ffffff70,
+	3px 3px 3px #00000030;
+}
+
+.todo-item-outer-container {
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	width: 100%;
+	padding: 5px;
+}
+.todo-item-inner-container {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+.todo-tags-container {
+	
+	display: flex;
+	justify-content: center;
+}
+
+.todo-items-text-container {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.todo-checkBox-checked {
+	width: fit-content;
+	background-color: green;
+	color: green;
+}
+
+.todo-checkBox-unchecked {
+	width: fit-content;
+	background-color: red;
+	color: red;
+
+}
+
+.todo-label {
+	text-decoration: none;
+	max-width: 60ch;
+	padding: 0px;
+	color:var(--fontHeader);
+	font-size: 1rem;
+	font-family: 'Futura Bk BT';
+}
+
+
+

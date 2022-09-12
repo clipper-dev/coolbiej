@@ -1,0 +1,56 @@
+.main-container {
+    display: flex;
+    align-items: top;
+    position: relative;
+}
+
+.dynamic-text {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.text-item {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    position: relative;
+    width: fit-content;
+}
+.text{
+    animation: slide 12s steps(4) infinite;    
+}
+
+
+@keyframes slide {
+    100% {
+        top: -200px;
+    }
+}
+.text-item::after {
+    margin: 0;
+    padding: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    border-left: solid 2px red;
+    height: 100%;
+    background-color: white;
+    width: 100%;
+}
+.text::after{ 
+    animation: typing 3s steps(15) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60%{
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
