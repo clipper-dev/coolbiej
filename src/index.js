@@ -1,9 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import styles from './styles.module.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <>
-
-  </>
-);
+export const ExampleComponent = ({ text }) => {
+  return <div className={styles.test}>Example Component: {text}</div>
+}
