@@ -13,7 +13,8 @@ Coolbiej is an opinionated UI library for React JS that aims for allowing for ra
 Current version supports the following set of components:
 
 - Accordion
-  Surely, there are more elements and components to come!
+
+> Surely, there are more elements and components to come!
 
 ## Install
 

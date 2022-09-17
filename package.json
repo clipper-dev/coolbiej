@@ -1,6 +1,6 @@
 {
   "name": "coolbiej",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "The only React JS UI library you will ever need.",
   "author": "clipper-dev",
   "license": "MIT",
@@ -24,13 +24,13 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "*"
   },
   "author": {
     "name": "Eric Kulbiej",
     "email": "ekulbiej@gmail.com"
   },
-  "homepage": "https://zaprojektowani.net/coolbiej",
+  "homepage": "https://coderburg.com/coolbiej",
   "devDependencies": {
     "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",
