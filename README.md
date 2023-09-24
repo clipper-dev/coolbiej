@@ -1,46 +1,104 @@
-# Getting Started with Create React App
+# Coolbiej
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![npm version](https://badge.fury.io/js/coolbiej.svg)](https://badge.fury.io/js/coolbiej) [![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) [![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/) [![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
 
-## Available Scripts
 
-In the project directory, you can run:
+Coolbiej is a powerful, opinionated UI library for Next.js, build with TailwindCSS and Typescript, aiming to speed up the development process. Tailored for Next.js, it allows you to quickly build web applications with beautiful, reusable components.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Coolbiej](#coolbiej)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Components](#components)
+  - [License](#license)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- 🚀 Fast and efficient
+- 💅 Styled with Tailwind CSS
+- 📦 Out-of-the-box components for quicker development
+- 📚 Comprehensive documentation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Install Coolbiej with npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install --save coolbiej
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+To use Coolbiej in your React or Next.js project, simply import the desired components:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```typescript
+import { MainButton, SecondaryButton, Input, Accordion } from 'coolbiej';
+import 'coolbiej/dist/index.css';
+```
+Here's an example using functional components in a React or Next.js project:
 
-### `npm run eject`
+```typescript
+import React from 'react';
+import { MainButton, Accordion } from 'coolbiej';
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+const Example = () => {
+  return (
+    <div>
+      <MainButton label="Click Me" />
+      <Accordion title="Important">
+        Accordion content here.
+      </Accordion>
+    </div>
+  );
+};
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+export default Example;
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Buttons
+- BeautifulButton
+- MainButton
+- SecondaryButton
 
-## Learn More
+Input
+- Input
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Accordion
+- Accordion
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dropdown
+- Dropdown
+- DropdownBreaker
+- DropdownLink
+
+Layout
+- PageContent
+- Page
+
+Typography
+- Title
+- Header1
+- Header2
+- Header3
+- Lead
+- P
+
+Utilities
+- CenterX
+- CenterY
+- WFull
+- WFit
+
+---
+
+More components are coming soon! 🚀
+
+## License
+MIT © clipper-dev
+
+
+Feel free to adjust the content to better suit the specifics of your library.

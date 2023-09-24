@@ -1,0 +1,51 @@
+.buttonWrapper {
+  background: linear-gradient(to right, tomato, rgb(115, 0, 197), rgb(141, 0, 197), tomato);
+  background-size: 400%;
+  background-position: 0% center;
+  -moz-transition: background-position 0.5s;
+  -webkit-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+}
+.buttonWrapper a,
+.buttonWrapper Link,
+.buttonWrapper div {
+  color: white !important;
+}
+.buttonWrapper:hover {
+  background-position: 100% center;
+}
+.label {
+  -moz-transition: transform 0.6s 0.125s cubic-bezier(0.1, 0.75, 0.25, 1);
+  -webkit-transition: transform 0.6s 0.125s cubic-bezier(0.1, 0.75, 0.25, 1);
+  transition: transform 0.6s 0.125s cubic-bezier(0.1, 0.75, 0.25, 1);
+}
+.buttonWrapper:hover .label {
+  -webkit-transform: translateX(23px);
+          transform: translateX(23px);
+}
+.arrowLeft,
+.arrowRight {
+  margin: 0 4px;
+}
+.arrowRight,
+.buttonWrapper:hover .arrowLeft {
+  -moz-transition: opacity 0.4s 0.25s, transform 0.6s 0.25s;
+  -webkit-transition: opacity 0.4s 0.25s, transform 0.6s 0.25s;
+          transition: opacity 0.4s 0.25s, transform 0.6s 0.25s;
+  transition-timing-function: cubic-bezier(0.1, 0.75, 0.25, 1);
+}
+.buttonWrapper:hover .arrowRight,
+.arrowLeft {
+  opacity: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+.buttonWrapper:hover .arrowLeft {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.225s;
+          transition-delay: 0.225s;
+}
