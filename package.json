@@ -1,47 +1,22 @@
 {
   "name": "coolbiej",
-  "version": "2.0.0",
-  "description": "The only React JS UI library you will ever need.",
+  "version": "2.0.2",
+  "description": "The only NextJS UI library you will ever need.",
   "author": {
     "name": "Eric Kulbiej (Clipper-dev)",
     "email": "ekulbiej@gmail.com"
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "types": "./dist/esm/src/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clipper-dev/coolbiej.git"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.54",
-    "@types/react": "^18.2.22",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "jest": "^29.7.0",
-    "jest-canvas-mock": "^2.5.2",
-    "jest-environment-jsdom": "^29.7.0",
-    "next": "^13.5.2",
-    "prettier": "^3.0.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.11.0",
-    "react-scripts": "5.0.1",
-    "ts-jest": "^29.1.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
   "peerDependencies": {
-    "react": ">=16",
-    "next": ">=13"
+    "next": ">=13",
+    "react": ">=16"
   },
   "files": [
     "dist",
@@ -65,7 +40,7 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint",
+    "prepublishOnly": "rm -rf ./dist && npm test && npm run prettier && npm run lint",
     "eject": "react-scripts eject",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
@@ -89,15 +64,42 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "next": ">=13",
+    "react": ">=16",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0"
+  },
   "devDependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "prettier": "^3.0.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.54",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.7.0",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^29.7.0",
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.20",
     "@babel/preset-env": "^7.22.20",
+    "@babel/preset-typescript": "^7.22.15",
+    "@jest/globals": "^29.7.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.50.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.30",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "ts-jest": "^29.1.1"
   }
 }

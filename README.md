@@ -13,6 +13,11 @@ Coolbiej is a powerful, opinionated UI library for Next.js, build with TailwindC
   - [Installation](#installation)
   - [Usage](#usage)
   - [Components](#components)
+  - [To-Do List 📝](#to-do-list-)
+    - [Components 🧩](#components-)
+    - [Stateless Components 🔄](#stateless-components-)
+    - [Dependency Management 🛠️](#dependency-management-️)
+    - [Theming 🎨](#theming-)
   - [License](#license)
 
 ## Features
@@ -96,6 +101,31 @@ Utilities
 ---
 
 More components are coming soon! 🚀
+
+## To-Do List 📝
+
+We're always looking to make `coolbiej` better and more feature-rich. Here are some items on our to-do list that we plan to implement:
+
+### Components 🧩
+- [ ] Add more components to enrich the UI offering. Some components to consider are:
+  - [ ] Tabs
+  - [ ] Modals
+  - [ ] Cards
+  - [ ] Tooltips
+
+### Stateless Components 🔄
+- [ ] Refactor existing components to be stateless wherever possible, to make them more flexible and easier to manage.
+
+### Dependency Management 🛠️
+- [ ] Remove dependency on external icon libraries for a lighter package.
+
+### Theming 🎨
+- [ ] Add theme support to allow users to easily customize the look and feel of components.
+
+---
+
+Contributions to help tick off items on this list are always welcome! See [CONTRIBUTING.md](./CONTRIBUTING.md) for more details on how to contribute.
+
 
 ## License
 MIT © clipper-dev
