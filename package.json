@@ -3,11 +3,17 @@
   "version": "2.0.0",
   "description": "The only React JS UI library you will ever need.",
   "author": {
-    "name": "Eric Kulbiej",
+    "name": "Eric Kulbiej (Clipper-dev)",
     "email": "ekulbiej@gmail.com"
   },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "license": "MIT",
-  "repository": "clipper-dev/coolbiej",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clipper-dev/coolbiej.git"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -33,11 +39,33 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "peerDependencies": {
+    "react": ">=16",
+    "next": ">=13"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "tailwindcss",
+    "ui",
+    "library",
+    "components",
+    "nextjs",
+    "next.js",
+    "nextjs-components"
+  ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm build:esm && npm build:cjs",
+    "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint",
     "eject": "react-scripts eject",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
