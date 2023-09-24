@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react'
 interface Props {
-  placeholder?: string;
-  type?: string;
-  value?: string;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  className?: string;
-  name?: string;
-  id?: string;
-  required?: boolean;
-  disabled?: boolean;
-  autoComplete?: string;
-  autoFocus?: boolean;
+  placeholder?: string
+  type?: string
+  value?: string
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+  className?: string
+  name?: string
+  id?: string
+  required?: boolean
+  disabled?: boolean
+  autoComplete?: string
+  autoFocus?: boolean
 }
 export function Input({
   placeholder,
@@ -39,5 +39,5 @@ export function Input({
       autoComplete={autoComplete}
       autoFocus={autoFocus}
     />
-  );
+  )
 }
