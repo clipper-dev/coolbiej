@@ -4,7 +4,7 @@ import { TriangleIcon } from './_misc/icons';
 //buttons
 import { MainButton, SecondaryButton } from './components/buttons';
 import { Toggle } from './components/buttons/Toggle';
-import { Action, Caution } from '@components/buttons/actions';
+import { Action, Caution } from './components/buttons/actions';
 //input
 import { Input } from './components/input';
 import { Accordion, AccordionDrawer } from './components/accordion';

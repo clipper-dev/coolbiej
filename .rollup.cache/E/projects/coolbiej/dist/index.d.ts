@@ -2,7 +2,7 @@ import '../index.css';
 import { TriangleIcon } from './_misc/icons';
 import { MainButton, SecondaryButton } from './components/buttons';
 import { Toggle } from './components/buttons/Toggle';
-import { Action, Caution } from '@components/buttons/actions';
+import { Action, Caution } from './components/buttons/actions';
 import { Input } from './components/input';
 import { Accordion, AccordionDrawer } from './components/accordion';
 import { Dropdown, DropdownItem, DropdownHeader, DropdownBreaker } from './components/dropdown';

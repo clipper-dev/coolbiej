@@ -1,13 +1,13 @@
 {
   "name": "coolbiej",
-  "version": "2.1.1",
+  "version": "2.1.4",
   "description": "The only NextJS UI library you will ever need.",
   "author": {
     "name": "Eric Kulbiej (Clipper-dev)",
     "email": "ekulbiej@gmail.com"
   },
   "files": [
-    "dist/**",
+    "dist",
     "LICENSE",
     "README.md"
   ],
@@ -41,12 +41,11 @@
   ],
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "rm -rf dist",
     "build": "rollup -c && npm run build:css",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/",
     "build:css": "tailwindcss -i ./index.css --output ./dist/index.css",
-    "prepublishOnly": "rm -rf ./dist && npm test && npm run prettier && npm run lint",
+    "prepublishOnly": "rm -rf ./dist && npm test && npm run prettier && npm run lint && npm run build && npm run build:css && npm run build:esm && npm run build:cjs",
     "eject": "react-scripts eject",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
