@@ -1,81 +1,73 @@
 {
   "name": "coolbiej",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "description": "The only NextJS UI library you will ever need.",
   "author": {
     "name": "Eric Kulbiej (Clipper-dev)",
     "email": "ekulbiej@gmail.com"
   },
-  "main": "dist/index",
-  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
+  "homepage": "https://github.com/clipper-dev/coolbiej/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clipper-dev/coolbiej.git"
   },
+  "bugs": {
+    "url": "https://github.com/clipper-dev/coolbiej/issues"
+  },
   "peerDependencies": {
-    "next": ">=13",
     "react": ">=16"
   },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
   "keywords": [
     "react",
+    "reactjs",
     "typescript",
+    "tailwind",
     "tailwindcss",
     "ui",
     "library",
     "components",
     "nextjs",
     "next.js",
-    "nextjs-components"
+    "nextjs-components",
+    "ui-kit"
   ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "rollup -c",
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c && npm run build:css",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/",
-    "prepare": "npm run build",
+    "build:css": "tailwindcss -i ./index.css --output ./dist/index.css",
     "prepublishOnly": "rm -rf ./dist && npm test && npm run prettier && npm run lint",
     "eject": "react-scripts eject",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "test": "jest --config jestconfig.json"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "test": "jest --config jestconfig.json",
+    "relink": "npm link && cd example && npm link coolbiej && cd .."
   },
   "dependencies": {
-    "next": ">=13",
-    "react": ">=16",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.11.0"
+    "react": ">=16"
   },
   "devDependencies": {
+    "react-dom": "^18.2.0",
+    "turbo": "^1.8.2",
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.20",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-typescript": "^7.22.15",
     "@jest/globals": "^29.7.0",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -98,6 +90,11 @@
     "prettier": "^3.0.3",
     "react-scripts": "5.0.1",
     "rollup": "^2.79.1",
+    "tsc-alias": "^1.8.7",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-preserve-directives": "^0.2.0",
+    "rollup-plugin-typescript-paths": "^1.4.0",
     "rollup-plugin-postcss": "^4.0.2",
     "tailwindcss": "^3.3.3",
     "ts-jest": "^29.1.1",

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/components/loader/index.tsx"],"names":[],"mappings":";AAAA,MAAM,CAAC,OAAO,UAAU,MAAM;IAC5B,OAAO,cAAK,SAAS,EAAC,uCAAuC,GAAO,CAAA;AACtE,CAAC","sourcesContent":["export default function Loader() {\r\n  return <div className='w-full rounded-full h-4 flow-gradient'></div>\r\n}\r\n"]}

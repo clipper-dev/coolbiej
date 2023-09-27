@@ -1,22 +1,30 @@
+import React from 'react'
 import { render } from '@testing-library/react'
 import 'jest-canvas-mock'
 import {
-  BeautifulButton,
   MainButton,
   SecondaryButton,
   Input,
   Accordion,
+  AccordionDrawer,
   Dropdown,
+  DropdownHeader,
+  DropdownItem,
   DropdownBreaker,
-  DropdownLink,
   PageContent,
   Page,
+  Display,
   Title,
-  Header1,
-  Header2,
-  Header3,
-  Lead,
-  P,
+  Headline,
+  Header,
+  Body,
+  Label,
+  Code,
+  Small,
+  NavItem,
+  TableTextBody,
+  TableTextHeader,
+  TableTextSmall,
   CenterX,
   CenterY,
   WFull,
@@ -27,22 +35,34 @@ describe('Common render', () => {
   it('renders without crashing', () => {
     render(
       <div>
-        <BeautifulButton>Beautiful Button</BeautifulButton>
+        {/* experimental  <BeautifulButton>Beautiful Button</BeautifulButton> */}
         <MainButton>Main Button</MainButton>
         <SecondaryButton>Secondary Button</SecondaryButton>
         <Input />
-        <Accordion label='Accordion'>Accordion Content</Accordion>
-        <Dropdown label='Dropdown'>Dropdown Content</Dropdown>
-        <DropdownBreaker />
-        <DropdownLink href=''>Dropdown Link</DropdownLink>
+        <Accordion label={'Accordion'}>
+          <AccordionDrawer>Accordion Drawer</AccordionDrawer>
+        </Accordion>
+        <Dropdown label={'Dropdown'}>
+          <DropdownHeader>Dropdown Header</DropdownHeader>
+          <DropdownItem>Dropdown Item</DropdownItem>
+          <DropdownBreaker />
+          <DropdownItem>Dropdown Item</DropdownItem>
+        </Dropdown>
+        {/*  <DropdownLink href=''>Dropdown Link</DropdownLink> */}
         <PageContent>Page Content</PageContent>
         <Page>Page Content</Page>
+        <Display>Display Content</Display>
         <Title>Title Content</Title>
-        <Header1>Header1 Content</Header1>
-        <Header2>Header2 Content</Header2>
-        <Header3>Header3 Content</Header3>
-        <Lead>Lead Content</Lead>
-        <P>P Content</P>
+        <Headline>Headline Content</Headline>
+        <Header>Header Content</Header>
+        <Body>Body Content</Body>
+        <Label>Label Content</Label>
+        <Code>Code Content</Code>
+        <Small>Small Content</Small>
+        <NavItem>NavItem Content</NavItem>
+        <TableTextBody>TableTextBody Content</TableTextBody>
+        <TableTextHeader>TableTextHeader Content</TableTextHeader>
+        <TableTextSmall>TableTextSmall Content</TableTextSmall>
         <CenterX>CenterX Content</CenterX>
         <CenterY>CenterY Content</CenterY>
         <WFull>WFull Content</WFull>
