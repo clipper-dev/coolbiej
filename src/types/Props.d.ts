@@ -8,3 +8,6 @@ interface PropsLabelArrow {
   label: React.ReactNode
   arrow?: BooleanSupportOption
 }
+interface PropsClick extends Props {
+  onClick?: (...args: Type) => void
+}

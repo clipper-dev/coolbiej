@@ -1,8 +1,10 @@
 import '../index.css';
+//icons
+import { TriangleIcon } from './_misc/icons';
 //buttons
-import { BeautifulButton } from './components/buttons/BeautifulButton';
 import { MainButton, SecondaryButton } from './components/buttons';
 import { Toggle } from './components/buttons/Toggle';
+import { Action, Caution } from '@components/buttons/actions';
 //input
 import { Input } from './components/input';
 import { Accordion, AccordionDrawer } from './components/accordion';
@@ -13,9 +15,9 @@ import { PageContent, Page } from './components/page';
 //typography
 import { Display, Title, Headline, Header, Body, Label, Small, NavItem, Code } from './components/typography';
 //table
-import { TableTextBody, TableTextHeader, TableTextSmall } from './components/table';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './components/table';
 //utils
 import { CenterX, CenterY } from './components/utils/wrappers/center';
 import { WFull, WFit } from './components/utils/wrappers/width';
-export { BeautifulButton, MainButton, SecondaryButton, Toggle, Input, Accordion, AccordionDrawer, Dropdown, DropdownItem, DropdownHeader, DropdownBreaker, PageContent, Page, Display, Title, Headline, Header, Body, Label, Small, NavItem, Code, TableTextBody, TableTextHeader, TableTextSmall, CenterX, CenterY, WFull, WFit, };
+export { TriangleIcon, MainButton, SecondaryButton, Toggle, Action, Caution, Input, Accordion, AccordionDrawer, Dropdown, DropdownItem, DropdownHeader, DropdownBreaker, PageContent, Page, Display, Title, Headline, Header, Body, Label, Small, NavItem, Code, Table, TableBody, TableCell, TableHead, TableHeader, TableRow, CenterX, CenterY, WFull, WFit, };
 //# sourceMappingURL=index.js.map
