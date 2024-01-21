@@ -8,7 +8,6 @@
     "target": "es6",
     "rootDir": "src",
     "outDir": "dist",
-    "composite": true,
     "declaration": true,
     "declarationMap": true,
     "esModuleInterop": true,

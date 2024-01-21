@@ -1,31 +1,42 @@
-import React from 'react'
+import React, { ComponentPropsWithRef } from 'react'
 import { TriangleIcon } from '../../_misc/icons'
 
-export function Table({ children, className = '' }: Props) {
-  return <table className={'w-full caption-bottom text-sm ' + className}>{children}</table>
+export function Table({ children, className = '', ...rest }: Props & ComponentPropsWithRef<'table'>) {
+  return (
+    <table className={'w-full caption-bottom text-sm ' + className} {...rest}>
+      {children}
+    </table>
+  )
 }
 
-export function TableHead({ children, className = '' }: Props) {
+export function TableHead({ children, className = '', ...rest }: Props & ComponentPropsWithRef<'thead'>) {
   return (
-    <thead className={'bg-zinc-50 dark:bg-zinc-700 border-y border-zinc-100 dark:border-zinc-700 ' + className}>
+    <thead
+      className={'bg-zinc-50 dark:bg-zinc-700 border-y border-zinc-100 dark:border-zinc-700 ' + className}
+      {...rest}
+    >
       <tr>{children}</tr>
     </thead>
   )
 }
 
-export function TableBody({ children, className = '' }: Props) {
-  return <tbody className={'[&_tr:last-child]:border-0 ' + className}>{children}</tbody>
+export function TableBody({ children, className = '', ...rest }: Props & ComponentPropsWithRef<'tbody'>) {
+  return (
+    <tbody className={'[&_tr:last-child]:border-0 ' + className} {...rest}>
+      {children}
+    </tbody>
+  )
 }
 
-export function TableRow({ children, className = '', onClick }: PropsClick) {
+export function TableRow({ children, className = '', onClick, ...rest }: PropsClick & ComponentPropsWithRef<'tr'>) {
   return (
-    <tr className={'border-b border-zinc-100 dark:border-zinc-700 ' + className} onClick={onClick}>
+    <tr className={'border-b border-zinc-100 dark:border-zinc-700 ' + className} onClick={onClick} {...rest}>
       {children}
     </tr>
   )
 }
 
-export function TableHeader({
+export function TableHeaderCell({
   children,
   className = '',
   onClick,
@@ -33,7 +44,8 @@ export function TableHeader({
   sort = 'none',
   align = 'left',
   strong = false,
-}: PropsTableHeader) {
+  ...rest
+}: PropsTableHeader & ComponentPropsWithRef<'th'>) {
   return (
     <th
       className={`p-4 text-zinc-500 dark:text-zinc-400 ${sortable ? 'cursor-pointer flex flex-row' : ''} ${
@@ -41,6 +53,7 @@ export function TableHeader({
       } ${className}`}
       onClick={onClick}
       align={align}
+      {...rest}
     >
       {children}
       {sortable && (
@@ -61,13 +74,14 @@ export function TableHeader({
   )
 }
 
-export function TableCell({ children, className = '', align = 'left', strong = false }: PropsTableCell) {
+export function TableDataCell({ children, className = '', align = 'left', strong = false, ...rest }: PropsTableCell) {
   return (
     <td
       className={`p-4 ${
         strong ? 'text-zinc-700 dark:text-zinc-100 font-semibold' : 'text-zinc-500 dark:text-zinc-400'
       } ${className}`}
       align={align}
+      {...rest}
     >
       {children}
     </td>

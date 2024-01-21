@@ -1,8 +1,15 @@
 'use client'
-import React, { useState } from 'react'
+import React, { ComponentPropsWithRef, useState } from 'react'
 import { TriangleIcon } from '../../_misc/icons'
 
-export function Accordion({ children, label, className, arrow = false, fill = false }: AccordionProps) {
+export function Accordion({
+  children,
+  label,
+  className,
+  arrow = false,
+  fill = false,
+  ...rest
+}: AccordionProps & ComponentPropsWithRef<'button'>) {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div className={`${fill ? 'w-full' : 'w-fit'}`}>
@@ -12,7 +19,10 @@ export function Accordion({ children, label, className, arrow = false, fill = fa
       >
         {label}
         {arrow && (
-          <TriangleIcon className={`ml-2 h-full aspect-square transition ${isOpen ? 'rotate-0' : '-rotate-180'}`} />
+          <TriangleIcon
+            className={`ml-2 h-full aspect-square transition ${isOpen ? 'rotate-0' : '-rotate-180'}`}
+            {...rest}
+          />
         )}
       </button>
       <div className={`${isOpen ? 'block]' : 'hidden'}`}>{children}</div>
@@ -20,12 +30,18 @@ export function Accordion({ children, label, className, arrow = false, fill = fa
   )
 }
 
-export function AccordionDrawer({ children, className = '', border = false }: AccordionDrawerProps) {
+export function AccordionDrawer({
+  children,
+  className = '',
+  border = false,
+  ...rest
+}: AccordionDrawerProps & ComponentPropsWithRef<'div'>) {
   return (
     <div
       className={`w-full bg-white dark:bg-zinc-800 mt-2 px-5 py-2.5  ${
         border ? 'border border-gray-200 dark:border-zinc-700 rounded-lg' : ''
       } ${className}`}
+      {...rest}
     >
       {children}
     </div>

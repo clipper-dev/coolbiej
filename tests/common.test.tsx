@@ -9,8 +9,9 @@ describe('Common render', () => {
       <div>
         {/* experimental  <BeautifulButton>Beautiful Button</BeautifulButton> */}
         <core.TriangleIcon />
-        <core.MainButton>Main Button</core.MainButton>
+        <core.PrimaryButton>Main Button</core.PrimaryButton>
         <core.SecondaryButton>Secondary Button</core.SecondaryButton>
+        <core.TertiaryButton>Tertiary Button</core.TertiaryButton>
         <core.Toggle
           checked={false}
           onChange={() => {
@@ -25,6 +26,7 @@ describe('Common render', () => {
         />
         <core.Action>Action</core.Action>
         <core.Caution>Caution</core.Caution>
+        <core.Checkbox></core.Checkbox>
         <core.Input />
         <core.Accordion label={'Accordion'}>
           <core.AccordionDrawer>Accordion Drawer</core.AccordionDrawer>
@@ -49,20 +51,20 @@ describe('Common render', () => {
         {/* table */}
         <core.Table>
           <core.TableHead>
-            <core.TableHeader strong>Name</core.TableHeader>
-            <core.TableHeader>Company</core.TableHeader>
-            <core.TableHeader>Position</core.TableHeader>
-            <core.TableHeader></core.TableHeader>
+            <core.TableHeaderCell strong>Name</core.TableHeaderCell>
+            <core.TableHeaderCell>Company</core.TableHeaderCell>
+            <core.TableHeaderCell>Position</core.TableHeaderCell>
+            <core.TableHeaderCell></core.TableHeaderCell>
           </core.TableHead>
           <core.TableBody>
             <core.TableRow>
-              <core.TableCell strong>John Doe</core.TableCell>
-              <core.TableCell>Google</core.TableCell>
-              <core.TableCell>Software Engineer</core.TableCell>
-              <core.TableCell className='flex flex-row gap-4' align='left'>
+              <core.TableDataCell strong>John Doe</core.TableDataCell>
+              <core.TableDataCell>Google</core.TableDataCell>
+              <core.TableDataCell>Software Engineer</core.TableDataCell>
+              <core.TableDataCell className='flex flex-row gap-4' align='left'>
                 <core.Action>Edit</core.Action>
                 <core.Caution>Delete</core.Caution>
-              </core.TableCell>
+              </core.TableDataCell>
             </core.TableRow>
           </core.TableBody>
         </core.Table>
